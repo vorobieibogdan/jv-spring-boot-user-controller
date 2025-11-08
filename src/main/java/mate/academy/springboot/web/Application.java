@@ -5,3 +5,4 @@ public class Application {
         System.out.println("User Management app would run here...");
     }
 }
+

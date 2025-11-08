@@ -1,6 +1,6 @@
 package mate.academy.springboot.web.controller;
 
-import java.util.List; // 🔹 java.* імпорти завжди першими
+import java.util.List; // ✅ java.* імпорти завжди першими
 import mate.academy.springboot.web.model.User;
 
 public class UserController {
@@ -22,3 +22,4 @@ public class UserController {
         System.out.println(controller.createUser(new User(3L, "john@i.ua")));
     }
 }
+
