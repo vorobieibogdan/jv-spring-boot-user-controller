@@ -1,7 +1,6 @@
 package mate.academy.springboot.web.controller;
 
 import mate.academy.springboot.web.model.User;
-
 import java.util.List;
 
 public class UserController {
