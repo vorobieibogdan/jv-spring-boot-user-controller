@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @GetMapping
-    public List<User> getAllUsers() {
+    public List<User> getAll() {
         return List.of(
                 new User(1L, "bob@i.ua"),
                 new User(2L, "alice@i.ua")
@@ -21,12 +21,9 @@ public class UserController {
     }
 
     @PostMapping
-    public String createUser(@RequestBody User user) {
-        return String.format(
-                "User created. Id: %s, email: %s",
-                user.id(),
-                user.email()
-        );
+    public String save(@RequestBody User user) {
+        return "User created. Id: %s, email: %s"
+                .formatted(user.id(), user.email());
     }
 }
 
